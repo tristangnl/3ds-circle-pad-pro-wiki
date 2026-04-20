@@ -1,9 +1,90 @@
 ---
+title: Games
+sidebar_label: Games
 description: See compatibles games with the Circle Pad Pro.
+hide_table_of_contents: true
 ---
+import SortableTable from '@site/src/components/SortableTable';
 
-- lists will help you
-- present the key points
-- that you want your users to remember
-  - and you may nest them
-    - multiple times
+## Compatible Games With Circle Pad Pro
+
+Tous les jeux compatibles avec le Circle Pad Pro sont pris en charge par le cstick et les boutons additionnels des new 3ds
+
+
+<SortableTable
+  columns={[
+    { key: 'image', label: 'Cover' },
+    { key: 'name', label: 'Name' },
+    { key: 'publisher', label: 'Publisher' },
+    //{ key: 'region', label: 'Region' },
+    { key: 'genre', label: 'Genre' },
+    //{ key: 'zrzl', label: 'ZR/ZL' },
+    { key: 'rightstick', label: 'Right Stick' },
+    { key: 'video', label: 'Video' },
+    { key: 'comment', label: 'Comment' },
+    { key: 'relevance', label: 'Relevance'}
+  ]}
+  defaultSort="name"
+  secondarySort="name"
+  labels={{
+    action: 'Action',
+    fps: 'FPS',
+    rpg: 'RPG',
+    actionadventure: 'Action-Adventure',
+    actionrpg: 'Action-RPG',
+    simulation: 'Simulation',
+    survivalhorror: 'Survival-Horror',
+    freecamera: 'Free camera',
+    aiming: 'Aiming',
+  }}
+  data={[
+    {
+      image: { type: 'image', src: '/img/covers/RE_Revelations.jpg', alt: 'RE Revelations' },
+      name: 'Resident Evil: Revelations',
+      publisher: 'Capcom',
+      genre: { type: 'tag', value: 'survivalhorror' },
+      rightstick: { type: 'tag', value: 'aiming' },
+      video: { type: 'youtube', id: '7uBsUoqeZ10' },
+      relevance: '5/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/Zelda_MM3D.jpg', alt: 'Zelda Majora\'s Mask 3d' },
+      name: 'Monster Hunter 3 Ultimate',
+      publisher: 'qCapcom',
+      genre: { type: 'tag', value: 'fps' },
+      compatible: { type: 'badge', value: true },
+      video: { type: 'youtube', id: '4IrL5ve3DGU' },
+    },
+    {
+      image: { type: 'image', src: '/img/covers/Zelda_MM3D.jpg', alt: 'Zelda Majora\'s Mask 3d' },
+      name: 'The Legend of Zelda: Majora\'s Mask 3D',
+      publisher: 'Nintendo',
+      genre: { type: 'tag', value: 'actionadventure' },
+      rightstick: { type: 'tag', value: 'freecamera' },
+      video: { type: 'youtube', id: 'hckkNtCmzLU' },
+      relevance: '4/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/FS18.jpg', alt: 'FS 18' },
+      name: 'Farming Simulator 18',
+      publisher: 'GIANTS Software',
+      genre: { type: 'tag', value: 'simulation' },
+      rightstick: { type: 'tag', value: 'freecamera' },
+      video: { type: 'youtube', id: 'Oh8fQzmw5LQ' },
+      relevance: '2/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/MH4U.jpg', alt: 'MH4U' },
+      name: 'Monster Hunter 4 Ultimate',
+      publisher: 'Capcom',
+      genre: { type: 'tag', value: 'actionrpg' },
+      rightstick: { type: 'tag', value: 'freecamera' },
+      video: { type: 'youtube', id: 'fYvLKkex4TU' },
+      relevance: '4/5'
+    }
+  ]}
+/>
+
+## Compatible Games only With c-stick
+
+voici des jeux qui ne sont pas compatibles avec le circle pad pro mais compatible avec le cstick et/ou zr et/ou zl des models new (new 3ds/new 3ds XL/new 2ds XL)
