@@ -133,7 +133,8 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Circle Pad Pro Wiki. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Circle Pad Pro Wiki. Built with Docusaurus.<br/>
+        All trademarks, logos and images are the property of their respective owners.<br/>`,
       },
       prism: {
         theme: prismThemes.github,

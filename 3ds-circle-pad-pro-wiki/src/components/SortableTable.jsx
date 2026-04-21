@@ -7,14 +7,16 @@ const stylesTAGS = {
     'tps':              { background: '#dbeafe', color: '#1e40af' },
     'rpg':              { background: '#ede9fe', color: '#5b21b6' },
     'aventure':         { background: '#d1fae5', color: '#065f46' },
-    'actionadventure': { background: '#d1fae5', color: '#065f46'},
-    'survivalhorror':  { background: '#d1fae5', color: '#065f46'},
-    'simulation':  { background: '#d1fae5', color: '#065f46'},
+    'actionadventure':  { background: '#d1fae5', color: '#065f46'},
+    'survivalhorror':   { background: '#d1fae5', color: '#065f46'},
+    'simulation':       { background: '#d1fae5', color: '#065f46'},
+    'platformer':       { background: '#d1fae5', color: '#065f46'},
 
-    'aiming':       { background: '#fee2e2', color: '#991b1b' },
-    'freecamera':  { background: '#dbeafe', color: '#1e40af' },
-    'other':        { background: '#dbeafe', color: '#1e40af' },
-    'lefthanded':  { background: '#ede9fe', color: '#5b21b6' },
+    'aiming':           { background: '#fee2e2', color: '#991b1b' },
+    'freecamera':       { background: '#dbeafe', color: '#1e40af' },
+    'other':            { background: '#dbeafe', color: '#1e40af' },
+    'shortcuts':        { background: '#dbeafe', color: '#1e40af' },
+    'lefthanded':       { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
@@ -43,7 +45,7 @@ const styles = {
 
 const isUnsortable = (value) => value?.type === 'youtube' || value?.type === 'image';
 
-const isNoPadding = (value) => value?.type === 'youtube' || value?.type === 'image';
+const isNoPadding = (value) => value?.type === 'youtube' || value?.type === 'image' || value?.type === 'text';
 
 const isNoWrap = (value) => value?.type === 'tag';
 
@@ -74,7 +76,7 @@ function renderCell(value, labels) {
     if (value?.type === 'youtube') return (
         <a href={`https://youtube.com/watch?v=${value.id}`} target="_blank" rel="noreferrer" style={styles.noTD}>
             <div style={styles.ytWrap}>
-                <img src={`https://img.youtube.com/vi/${value.id}/mqdefault.jpg`} alt="vidéo" style={styles.ytImg} />
+                <img src={`https://img.youtube.com/vi/${value.id}/mqdefault.jpg`} alt={value.id} style={styles.ytImg} />
                     <div style={styles.ytBtn}>
                     <div style={styles.ytArrow} />
                     </div>
@@ -83,6 +85,9 @@ function renderCell(value, labels) {
     );
 
     //others and non specified
+    if (value?.type === 'text') {
+        return value.value;
+    }
     return value;
 }
 
