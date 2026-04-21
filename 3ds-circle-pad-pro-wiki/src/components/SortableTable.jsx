@@ -11,6 +11,9 @@ const stylesTAGS = {
     'survivalhorror':   { background: '#d1fae5', color: '#065f46'},
     'simulation':       { background: '#d1fae5', color: '#065f46'},
     'platformer':       { background: '#d1fae5', color: '#065f46'},
+    'fighting':         { background: '#d1fae5', color: '#065f46'},
+    'education':        { background: '#d1fae5', color: '#065f46'},
+    'tsshooter':        { background: '#d1fae5', color: '#065f46'},
 
     'aiming':           { background: '#fee2e2', color: '#991b1b' },
     'freecamera':       { background: '#dbeafe', color: '#1e40af' },

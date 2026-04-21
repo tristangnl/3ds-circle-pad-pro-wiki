@@ -36,6 +36,9 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
     simulation: 'Simulation',
     survivalhorror: 'Survival-Horror',
     platformer: 'Platformer',
+    fighting: 'Fighting',
+    education: 'Education',
+    tsshooter: 'Twin-stick shooter',
 
     freecamera: 'Free Camera',
     aiming: 'Aiming',
@@ -52,14 +55,6 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       rightstick: { type: 'tag', value: 'aiming' },
       video: { type: 'youtube', id: '7uBsUoqeZ10' },
       relevance: '5/5'
-    },
-    {
-      image: { type: 'image', src: '/img/covers/Zelda_MM3D.jpg', alt: 'Zelda Majora\'s Mask 3d' },
-      name: 'Monster Hunter 3 Ultimate',
-      publisher: 'qCapcom',
-      genre: { type: 'tag', value: 'fps' },
-      compatible: { type: 'badge', value: true },
-      video: { type: 'youtube', id: '4IrL5ve3DGU' },
     },
     {
       image: { type: 'image', src: '/img/covers/Zelda_MM3D.jpg', alt: 'Zelda Majora\'s Mask 3d' },
@@ -89,7 +84,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       relevance: '4/5'
     },
     {
-      image: { type: 'image', src: '/img/covers/IronFallInvasion.webp', alt: 'IronFallInvasion' },
+      image: { type: 'image', src: '/img/covers/IronFall_Invasion.jpg', alt: 'IronFall Invasion' },
       name: 'IronFall Invasion',
       publisher: 'VD-DEV',
       genre: { type: 'tag', value: 'tps' },
@@ -109,12 +104,61 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
     },
     {
       image: { type: 'image', src: '/img/covers/OnePieceUWR.webp', alt: 'OnePiece UWR' },
-      name: 'One Piece: Unlimited World Red ',
+      name: 'One Piece: Unlimited World Red',
       publisher: 'BANDAI NAMCO Entertainment',
       genre: { type: 'tag', value: 'actionadventure' },
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: 'LQnyW9itf44' },
       relevance: '1/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/SK2DC.webp', alt: 'Senran Kagura 2' },
+      name: 'Senran Kagura 2: Deep Crimson',
+      publisher: 'Marvelous Interactive',
+      genre: { type: 'tag', value: 'fighting' },
+      rightstick: { type: 'tag', value: 'freecamera' },
+      video: { type: 'youtube', id: 'fJP9MKYDZKQ' },
+      relevance: '2/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/SmileBASIC.jpg', alt: 'SmileBASIC' },
+      name: 'SmileBASIC',
+      publisher: 'SmileBoom',
+      genre: { type: 'tag', value: 'education' },
+      rightstick: { type: 'tag', value: 'other' },
+      video: { type: 'youtube', id: 'Gu2ZvxAuSA8' },
+      comment: { type: 'text', value: 'Digital Only' },
+      relevance: '4/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/AOTHIC.webp', alt: 'AOT humanity in chains' },
+      name: 'Attack on Titan: Humanity in Chains',
+      publisher: 'Atlus',
+      genre: { type: 'tag', value: 'action' },
+      rightstick: { type: 'tag', value: 'freecamera' },
+      video: { type: 'youtube', id: 'FOSQp95EBdc' },
+      comment: { type: 'text', value: 'AKA: Shingeki no Kyojin - Humanity in Chains | Digital Only in EUR' },
+      relevance: '4/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/MoonChronicles.webp', alt: 'Moon Chronicles' },
+      name: 'Moon Chronicles',
+      publisher: 'Renegade Kid',
+      genre: { type: 'tag', value: 'fps' },
+      rightstick: { type: 'tag', value: 'aiming' },
+      video: { type: 'youtube', id: '3Q5nWPiVr5o' },
+      comment: { type: 'text', value: 'Exclu NA | Digital Only' },
+      relevance: '4/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/NanoAssaultEx.webp', alt: 'Nano Assault EX' },
+      name: 'Nano Assault EX',
+      publisher: 'Shin\'en Multimedia',
+      genre: { type: 'tag', value: 'tsshooter' },
+      rightstick: { type: 'tag', value: 'aiming' },
+      video: { type: 'youtube', id: '4WQDjl3Sweo' },
+      comment: { type: 'text', value: 'Digital Only' },
+      relevance: '4/5'
     }
   ]}
 />
@@ -124,3 +168,59 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
 Here are games that are not compatible with the Circle Pad Pro, but are only compatible with the c-stick and/or the ZR and/or ZL buttons on New models (New 3DS / New 3DS XL / New 2DS XL).
 
 This is mainly due to developers overlooking the Circle Pad Pro, often being unaware of its existence, compared to the New 3DS. It is also related to the hardware limitations of older models. Some games were designed specifically for the New 3DS (e.g. Xenoblade Chronicles 3D), and the Circle Pad Pro requires around [5% extra CPU usage](https://mettrelien) (because of infared communication), which could be unsustainable in more demanding games due to performance drops (e.g. Super Smash Bros).
+
+<SortableTable
+  columns={[
+    { key: 'image', label: 'Cover' },
+    { key: 'name', label: 'Name' },
+    { key: 'publisher', label: 'Publisher' },
+    //{ key: 'region', label: 'Region' },
+    { key: 'genre', label: 'Genre' },
+    //{ key: 'zrzl', label: 'ZR/ZL' },
+    { key: 'rightstick', label: 'Right Stick' },
+    { key: 'video', label: 'Video' },
+    { key: 'comment', label: 'Comment' },
+    { key: 'relevance', label: 'Relevance'}
+  ]}
+  defaultSort="name"
+  secondarySort="name"
+  labels={{
+    action: 'Action',
+    fps: 'FPS',
+    rpg: 'RPG',
+    actionadventure: 'Action-Adventure',
+    actionrpg: 'Action-RPG',
+    simulation: 'Simulation',
+    survivalhorror: 'Survival-Horror',
+    platformer: 'Platformer',
+    fighting: 'Fighting',
+    education: 'Education',
+    tsshooter: 'Twin-stick shooter',
+
+    freecamera: 'Free Camera',
+    aiming: 'Aiming',
+    other: 'Other',
+    shortcuts: 'Shortcuts',
+    lefthanded: 'Left-Handed'
+  }}
+  data={[
+    {
+      image: { type: 'image', src: '/img/covers/Terraria.jpg', alt: 'Terraria' },
+      name: 'Terraria',
+      publisher: '505 Games',
+      genre: { type: 'tag', value: 'platformer' },
+      rightstick: { type: 'tag', value: 'other' },
+      video: { type: 'youtube', id: '' },
+      relevance: '3/5'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/Zelda_HW.webp', alt: 'Hyrule Warriors' },
+      name: 'Hyrule Warriors: Legends',
+      publisher: 'Nintendo',
+      genre: { type: 'tag', value: 'actionadventure' },
+      rightstick: { type: 'tag', value: 'freecamera' },
+      video: { type: 'youtube', id: '' },
+      relevance: '3/5'
+    }
+  ]}
+/>
