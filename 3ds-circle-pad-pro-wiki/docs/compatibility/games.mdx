@@ -12,6 +12,8 @@ import SortableTable from '@site/src/components/SortableTable';
 
 All games compatible with the Circle Pad Pro are natively supported by the c-stick and the additional shoulder triggers on the New 3DS.
 
+[Relevance criteria](#relevance-is-rated-using-the-following-criteria-4)
+
 <SortableTable
   columns={[
     { key: 'image', label: 'Cover' },
@@ -23,7 +25,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
     { key: 'rightstick', label: 'Right Stick' },
     { key: 'video', label: 'Video' },
     { key: 'comment', label: 'Comment' },
-    { key: 'relevance', label: 'Relevance'}
+    { key: 'relevance', label: 'Relevance (/4)'}
   ]}
   defaultSort="name"
   secondarySort="name"
@@ -54,7 +56,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       genre: { type: 'tag', value: 'survivalhorror' },
       rightstick: { type: 'tag', value: 'aiming' },
       video: { type: 'youtube', id: '7uBsUoqeZ10' },
-      relevance: '5/5'
+      relevance: '4 (T,S,F,C)'
     },
     {
       image: { type: 'image', src: '/img/covers/Zelda_MM3D.jpg', alt: 'Zelda Majora\'s Mask 3d' },
@@ -63,7 +65,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       genre: { type: 'tag', value: 'actionadventure' },
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: 'hckkNtCmzLU' },
-      relevance: '4/5'
+      relevance: '3 (S,F,C)'
     },
     {
       image: { type: 'image', src: '/img/covers/FS18.webp', alt: 'FS 18' },
@@ -72,7 +74,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       genre: { type: 'tag', value: 'simulation' },
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: 'Oh8fQzmw5LQ' },
-      relevance: '2/5'
+      relevance: '2'
     },
     {
       image: { type: 'image', src: '/img/covers/MH4U.jpg', alt: 'MH4U' },
@@ -81,7 +83,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       genre: { type: 'tag', value: 'actionrpg' },
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: 'fYvLKkex4TU' },
-      relevance: '4/5'
+      relevance: '4'
     },
     {
       image: { type: 'image', src: '/img/covers/IronFall_Invasion.jpg', alt: 'IronFall Invasion' },
@@ -91,7 +93,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       rightstick: { type: 'tag', value: 'aiming' },
       video: { type: 'youtube', id: 'o_6hgxjr1go' },
       comment: { type: 'text', value: 'Digital Only' },
-      relevance: '4/5'
+      relevance: '3 (T,S,C)'
     },
     {
       image: { type: 'image', src: '/img/covers/ShantaePiratesCurse.webp', alt: 'Shantae PC' },
@@ -100,7 +102,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       genre: { type: 'tag', value: 'platformer' },
       rightstick: { type: 'tag', value: 'shortcuts' },
       video: { type: 'youtube', id: 'KgGtn5sBMrQ' },
-      relevance: '1/5'
+      relevance: '0'
     },
     {
       image: { type: 'image', src: '/img/covers/OnePieceUWR.webp', alt: 'OnePiece UWR' },
@@ -109,7 +111,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       genre: { type: 'tag', value: 'actionadventure' },
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: 'LQnyW9itf44' },
-      relevance: '1/5'
+      relevance: '1'
     },
     {
       image: { type: 'image', src: '/img/covers/SK2DC.webp', alt: 'Senran Kagura 2' },
@@ -118,7 +120,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       genre: { type: 'tag', value: 'fighting' },
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: 'fJP9MKYDZKQ' },
-      relevance: '2/5'
+      relevance: '2'
     },
     {
       image: { type: 'image', src: '/img/covers/SmileBASIC.jpg', alt: 'SmileBASIC' },
@@ -128,7 +130,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       rightstick: { type: 'tag', value: 'other' },
       video: { type: 'youtube', id: 'Gu2ZvxAuSA8' },
       comment: { type: 'text', value: 'Digital Only' },
-      relevance: '4/5'
+      relevance: '4'
     },
     {
       image: { type: 'image', src: '/img/covers/AOTHIC.webp', alt: 'AOT humanity in chains' },
@@ -138,7 +140,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: 'FOSQp95EBdc' },
       comment: { type: 'text', value: 'AKA: Shingeki no Kyojin - Humanity in Chains | Digital Only in EUR' },
-      relevance: '4/5'
+      relevance: '4'
     },
     {
       image: { type: 'image', src: '/img/covers/MoonChronicles.webp', alt: 'Moon Chronicles' },
@@ -148,7 +150,7 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       rightstick: { type: 'tag', value: 'aiming' },
       video: { type: 'youtube', id: '3Q5nWPiVr5o' },
       comment: { type: 'text', value: 'Exclu NA | Digital Only' },
-      relevance: '4/5'
+      relevance: '4'
     },
     {
       image: { type: 'image', src: '/img/covers/NanoAssaultEx.webp', alt: 'Nano Assault EX' },
@@ -158,16 +160,24 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
       rightstick: { type: 'tag', value: 'aiming' },
       video: { type: 'youtube', id: '4WQDjl3Sweo' },
       comment: { type: 'text', value: 'Digital Only' },
-      relevance: '4/5'
+      relevance: '4'
     }
   ]}
 />
+
+#### Relevance is rated using the following criteria (/4): 
+
+- **T (Triggers)**: Meaningful use of ZL/ZR buttons *<small>(e.g. ❌ Zelda MM3D - triggers simply duplicate L/R)</small>*
+- **S (Stick)**: Proper use of the right stick *<small>(e.g. ❌ Shantae Pirate's Curse - right stick is only used for inventory navigation)</small>*
+- **F (Feature)**: Adds new functionality not available without the CPP *<small>(e.g. ✅ Zelda MM3D - free camera control is not available without CPP | ❌ MH4U -  free camera control is already available with dpad)</small>*
+- **C (Controls)**: Significantly improves gameplay and is essential for the optimal experience *<small>(e.g. ✅ RE Revelations - CPP is a game changer | ❌ FS18 - no significant gameplay benefit)</small>*
+
 
 ## Games Compatible with c-stick Only
 
 Here are games that are not compatible with the Circle Pad Pro, but are only compatible with the c-stick and/or the ZR and/or ZL buttons on New models (New 3DS / New 3DS XL / New 2DS XL).
 
-This is mainly due to developers overlooking the Circle Pad Pro, often being unaware of its existence, compared to the New 3DS. It is also related to the hardware limitations of older models. Some games were designed specifically for the New 3DS (e.g. Xenoblade Chronicles 3D), and the Circle Pad Pro requires around [5% extra CPU usage](https://mettrelien) (because of infared communication), which could be unsustainable in more demanding games due to performance drops (e.g. Super Smash Bros).
+This is mainly due to developers overlooking the Circle Pad Pro, often being unaware of its existence, compared to the New 3DS. It is also related to the hardware limitations of older models. Some games were designed specifically for the New 3DS *(e.g. Xenoblade Chronicles 3D)*, and the Circle Pad Pro requires around [5% extra CPU usage](https://mettrelien) (because of infared communication), which could be unsustainable in more demanding games due to performance drops *(e.g. Super Smash Bros)*.
 
 <SortableTable
   columns={[
@@ -211,7 +221,7 @@ This is mainly due to developers overlooking the Circle Pad Pro, often being una
       genre: { type: 'tag', value: 'platformer' },
       rightstick: { type: 'tag', value: 'other' },
       video: { type: 'youtube', id: '' },
-      relevance: '3/5'
+      relevance: '3'
     },
     {
       image: { type: 'image', src: '/img/covers/Zelda_HW.webp', alt: 'Hyrule Warriors' },
@@ -220,7 +230,16 @@ This is mainly due to developers overlooking the Circle Pad Pro, often being una
       genre: { type: 'tag', value: 'actionadventure' },
       rightstick: { type: 'tag', value: 'freecamera' },
       video: { type: 'youtube', id: '' },
-      relevance: '3/5'
+      relevance: '3'
+    },
+    {
+      image: { type: 'image', src: '/img/covers/Smashbros.webp', alt: 'Smashbros' },
+      name: 'Super Smash Bros. for Nintendo 3DS',
+      publisher: 'Nintendo',
+      genre: { type: 'tag', value: 'fighting' },
+      rightstick: { type: 'tag', value: 'other' },
+      video: { type: 'youtube', id: '' },
+      relevance: '3'
     }
   ]}
 />
