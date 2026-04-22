@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const stylesTAGS = {
     'action':           { background: '#fee2e2', color: '#991b1b' },
@@ -63,11 +64,14 @@ function renderCell(value, labels) {
     if (value === null || value === undefined) return '—';
   
     // image
-    if (value?.type === 'image') return (
-        <a href={value.src} target="_blank" rel="noreferrer">
-            <img src={value.src} alt={value.alt} style={styles.image} />
+    if (value?.type === 'image') {
+    const imgUrl = useBaseUrl(value.src);
+    return (
+        <a href={imgUrl} target="_blank" rel="noreferrer">
+            <img src={imgUrl} alt={value.alt} style={styles.image} />
         </a>
     );
+}
     
     //tag
     if (value?.type === 'tag') {
