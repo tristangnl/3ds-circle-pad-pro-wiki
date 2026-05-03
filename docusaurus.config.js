@@ -20,15 +20,17 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://tristan.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/3ds-circle-pad-pro-wiki/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'tristangnl', // Usually your GitHub org/user name.
+  projectName: '3ds-circle-pad-pro-wiki', // Usually your repo name.
+  deploymentBranch: 'deploy',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
@@ -52,6 +54,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -62,6 +65,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+            hideable: true,
+        },
+    },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
@@ -70,18 +78,19 @@ const config = {
       navbar: {
         title: 'Circle Pad Pro and New 3ds wiki',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Circle Pad Pro Wiki 3ds Logo',
+          src: 'img/circlepad.svg',
         },
+        hideOnScroll: true,
         items: [
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/tristangnl/3ds-circle-pad-pro-wiki',
             label: 'GitHub',
             position: 'right',
           },
@@ -120,17 +129,14 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+                href: 'https://github.com/tristangnl/3ds-circle-pad-pro-wiki',
+              }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Circle Pad Pro Wiki. Built with Docusaurus.<br/>
+        All trademarks, logos and images are the property of their respective owners.<br/>`,
       },
       prism: {
         theme: prismThemes.github,
