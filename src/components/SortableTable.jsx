@@ -23,6 +23,7 @@ const stylesTAGS = {
     'lefthanded':       { background: '#ede9fe', color: '#5b21b6' },
     'aerialcombat':     { background: '#ede9fe', color: '#5b21b6' },
     'railshooter':      { background: '#ede9fe', color: '#5b21b6' },
+    'sandbox':      { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
