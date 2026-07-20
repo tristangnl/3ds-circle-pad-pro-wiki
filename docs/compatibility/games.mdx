@@ -134,7 +134,7 @@ export const cppGames=[
     publisher: 'INTELLIGENT SYSTEMS',
     genre: { type: 'tag', value: 'trpg' },
     rightstick: { type: 'tag', value: 'aiming' },
-    video: { type: 'youtube', id: '' },
+    video: { type: 'youtube', id: 'PIzFI9zRUas' },
     comment: { type: 'text', value: '' },
     relevance: ''
   },
@@ -205,7 +205,7 @@ export const cppGames=[
 <SortableTable
   columns={[
     { key: 'image', label: 'Cover' },
-    { key: 'name', label: 'Name' },
+    { key: 'name', label: 'Name', minWidth: '180px'  },
     { key: 'publisher', label: 'Publisher' },
     //{ key: 'region', label: 'Region' },
     { key: 'genre', label: 'Genre' },
@@ -233,6 +233,7 @@ export const cppGames=[
     aerialcombat: 'Aerial Combat',
     railshooter: 'Rail Shooter',
     sandbox: 'Sand Box',
+    jrpg: 'JRPG',
 
     freecamera: 'Free Camera',
     aiming: 'Aiming',
@@ -274,7 +275,7 @@ export const cstickGames=[
     publisher: 'Nintendo',
     genre: { type: 'tag', value: 'actionadventure' },
     rightstick: { type: 'tag', value: 'freecamera' },
-    video: { type: 'youtube', id: '' },
+    video: { type: 'youtube', id: 'CJCoum4tgtM' },
     relevance: '3'
   },
   {
@@ -285,6 +286,33 @@ export const cstickGames=[
     rightstick: { type: 'tag', value: 'other' },
     video: { type: 'youtube', id: '' },
     relevance: '3'
+  },
+  {
+    image: { type: 'image', src: '/img/covers/FEWarriors.png', alt: 'Fire Emblem Warriors' },
+    name: 'Fire Emblem Warriors',
+    publisher: 'Nintendo',
+    genre: { type: 'tag', value: 'actionadventure' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: 'YubvGvhDjUY' },
+    relevance: '3'
+  },
+  {
+    image: { type: 'image', src: '/img/covers/XC3D.png', alt: 'Xenoblade Chronicles 3D' },
+    name: 'Xenoblade Chronicles 3D',
+    publisher: 'Nintendo',
+    genre: { type: 'tag', value: 'jrpg' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: '' },
+    relevance: '3'
+  },
+  {
+    image: { type: 'image', src: '/img/covers/BOI.png', alt: 'The Binding of Isaac: Rebirth' },
+    name: 'The Binding of Isaac: Rebirth',
+    publisher: 'Nicalis',
+    genre: { type: 'tag', value: 'tsshooter' },
+    rightstick: { type: 'tag', value: 'aiming' },
+    video: { type: 'youtube', id: 'Ia9YgnV0FiM' },
+    relevance: '3'
   }
 ];
 
@@ -293,7 +321,7 @@ export const cstickGames=[
 <SortableTable
   columns={[
     { key: 'image', label: 'Cover' },
-    { key: 'name', label: 'Name' },
+    { key: 'name', label: 'Name', minWidth: '180px' },
     { key: 'publisher', label: 'Publisher' },
     //{ key: 'region', label: 'Region' },
     { key: 'genre', label: 'Genre' },
@@ -317,6 +345,11 @@ export const cstickGames=[
     fighting: 'Fighting',
     education: 'Education',
     tsshooter: 'Twin-stick shooter',
+    trpg: 'Tactical RPG',
+    aerialcombat: 'Aerial Combat',
+    railshooter: 'Rail Shooter',
+    sandbox: 'Sand Box',
+    jrpg: 'JRPG',
 
     freecamera: 'Free Camera',
     aiming: 'Aiming',

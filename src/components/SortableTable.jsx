@@ -3,7 +3,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const stylesTAGS = {
     'action':           { background: '#fee2e2', color: '#991b1b' },
-'actionrpg':            { background: '#fee2e2', color: '#991b1b' },
+    'actionrpg':        { background: '#fee2e2', color: '#991b1b' },
     'fps':              { background: '#dbeafe', color: '#1e40af' },
     'tps':              { background: '#dbeafe', color: '#1e40af' },
     'rpg':              { background: '#ede9fe', color: '#5b21b6' },
@@ -23,7 +23,8 @@ const stylesTAGS = {
     'lefthanded':       { background: '#ede9fe', color: '#5b21b6' },
     'aerialcombat':     { background: '#ede9fe', color: '#5b21b6' },
     'railshooter':      { background: '#ede9fe', color: '#5b21b6' },
-    'sandbox':      { background: '#ede9fe', color: '#5b21b6' },
+    'sandbox':          { background: '#ede9fe', color: '#5b21b6' },
+    'jrpg':             { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
@@ -38,10 +39,10 @@ const styles = {
                   color: 'var(--ifm-color-emphasis-600)', userSelect: 'none', whiteSpace: 'nowrap' },
     thSortable: { cursor: 'pointer' },
     thStatic:   { cursor: 'default' },
-    td: { padding: '8px 6px', borderBottom: '0.5px solid var(--ifm-color-emphasis-200)', verticalAlign: 'middle', textAlign: 'center' },
-    tdCompact: { padding: '4px 4px' },
+    td:         { padding: '8px 6px', borderBottom: '0.5px solid var(--ifm-color-emphasis-200)', verticalAlign: 'middle', textAlign: 'center' },
+    tdCompact:  { padding: '4px 4px' },
     tag:        { borderRadius: '4px', padding: '2px 8px', fontSize: '11px', fontWeight: 600 },
-    image: { width: '100%', maxWidth: '120px', objectFit: 'cover', display: 'inline-block', verticalAlign: 'middle' },
+    image:      { width: '110px', maxWidth: '110px', objectFit: 'contain', display: 'inline-block', verticalAlign: 'middle' },
     ytWrap:     { position: 'relative', width: '100px', overflow: 'hidden', cursor: 'pointer' },
     ytImg:      { width: '100px', height: '56px', objectFit: 'cover', display: 'block' },
     ytBtn:      { position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
@@ -131,7 +132,8 @@ export default function SortableTable({ columns, data, labels, defaultSort = 'na
                             key={col.key} onClick={() => handleSort(col.key)}
                             style={{
                                 ...styles.th,
-                                ...(isUnsortable(data[0]?.[col.key]) ? styles.thStatic : styles.thSortable)
+                                ...(isUnsortable(data[0]?.[col.key]) ? styles.thStatic : styles.thSortable),
+                                ...(col.minWidth ? { minWidth: col.minWidth } : {})
                             }}
                         >
                         {col.label}
