@@ -45,12 +45,12 @@ const styles = {
     tag:        { borderRadius: '4px', padding: '2px 8px', fontSize: '11px', fontWeight: 600 },
     tagGroup:   { display: 'inline-flex', flexWrap: 'wrap', gap: '4px', justifyContent: 'center' },
     image:      { width: '110px', maxWidth: '110px', objectFit: 'contain', display: 'inline-block', verticalAlign: 'middle' },
-    ytWrap:     { position: 'relative', width: '100px', overflow: 'hidden', cursor: 'pointer' },
-    ytImg:      { width: '100px', height: '56px', objectFit: 'cover', display: 'block' },
+    ytWrap:     { position: 'relative', minWidth: '160px', overflow: 'hidden', cursor: 'pointer',display: 'flex', justifyContent: 'center', alignItems: 'center'},
+    ytImg:      { minWidth: '160px', aspectRatio: '16 / 9', objectFit: 'cover', display: 'block' },
     ytBtn:      { position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
-                  width: '28px', height: '28px', background: 'rgba(0,0,0,0.7)', borderRadius: '50%',
+                  width: '40px', height: '40px', background: 'rgba(0,0,0,0.7)', borderRadius: '50%',
                   display: 'flex', alignItems: 'center', justifyContent: 'center' },
-    ytArrow:    { borderLeft: '10px solid white', borderTop: '6px solid transparent', borderBottom: '6px solid transparent', marginLeft: '2px' },
+    ytArrow:    { borderLeft: '14px solid white', borderTop: '9px solid transparent', borderBottom: '9px solid transparent', marginLeft: '3px' },
 };
 
 const isUnsortable = (value) => value?.type === 'youtube' || value?.type === 'image';
@@ -74,13 +74,13 @@ function renderCell(value, labels) {
   
     // image
     if (value?.type === 'image') {
-    const imgUrl = useBaseUrl(value.src);
-    return (
-        <a href={imgUrl} target="_blank" rel="noreferrer">
-            <img src={imgUrl} alt={value.alt} style={styles.image} />
-        </a>
-    );
-}
+        const imgUrl = useBaseUrl(value.src);
+        return (
+            <a href={imgUrl} target="_blank" rel="noreferrer">
+                <img src={imgUrl} alt={value.alt} style={styles.image} />
+            </a>
+        );
+    }
     
     //tag
     if (value?.type === 'tag') {
