@@ -25,6 +25,7 @@ const stylesTAGS = {
     'railshooter':      { background: '#ede9fe', color: '#5b21b6' },
     'sandbox':          { background: '#ede9fe', color: '#5b21b6' },
     'jrpg':             { background: '#ede9fe', color: '#5b21b6' },
+    'roguelike':        { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
@@ -42,6 +43,7 @@ const styles = {
     td:         { padding: '8px 6px', borderBottom: '0.5px solid var(--ifm-color-emphasis-200)', verticalAlign: 'middle', textAlign: 'center' },
     tdCompact:  { padding: '4px 4px' },
     tag:        { borderRadius: '4px', padding: '2px 8px', fontSize: '11px', fontWeight: 600 },
+    tagGroup:   { display: 'inline-flex', flexWrap: 'wrap', gap: '4px', justifyContent: 'center' },
     image:      { width: '110px', maxWidth: '110px', objectFit: 'contain', display: 'inline-block', verticalAlign: 'middle' },
     ytWrap:     { position: 'relative', width: '100px', overflow: 'hidden', cursor: 'pointer' },
     ytImg:      { width: '100px', height: '56px', objectFit: 'cover', display: 'block' },
@@ -58,7 +60,10 @@ const isNoPadding = (value) => value?.type === 'youtube' || value?.type === 'ima
 const isNoWrap = (value) => value?.type === 'tag';
 
 const getSortValue = (val) => {
-    if (val?.type === 'tag')   return val.value.toLowerCase();
+    if (val?.type === 'tag') {
+        const values = Array.isArray(val.value) ? val.value : [val.value];
+        return values.join('').toLowerCase();
+    }
     if (val?.type === 'badge') return String(val.value);
     return String(val ?? '').toLowerCase();
 };
@@ -79,8 +84,16 @@ function renderCell(value, labels) {
     
     //tag
     if (value?.type === 'tag') {
-        const label = labels?.[value.value] ?? value.value;
-        return <span style={{...styles.tag, ...stylesTAGS[value.value]}}>{label}</span>;
+        const values = Array.isArray(value.value) ? value.value : [value.value];
+        return (
+            <span style={styles.tagGroup}>
+                {values.map((v) => (
+                    <span key={v} style={{...styles.tag, ...stylesTAGS[v]}}>
+                        {labels?.[v] ?? v}
+                    </span>
+                ))}
+            </span>
+        );
     }
 
     // youtube

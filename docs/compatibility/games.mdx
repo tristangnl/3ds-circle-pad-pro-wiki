@@ -14,6 +14,34 @@ All games compatible with the Circle Pad Pro are natively supported by the c-sti
 
 [Relevance criteria](#relevance-is-rated-using-the-following-criteria-4)
 
+export const labels=[
+  {
+    action: 'Action',
+    fps: 'FPS',
+    rpg: 'RPG',
+    actionadventure: 'Action-Adventure',
+    actionrpg: 'Action-RPG',
+    simulation: 'Simulation',
+    survivalhorror: 'Survival-Horror',
+    platformer: 'Platformer',
+    fighting: 'Fighting',
+    education: 'Education',
+    tsshooter: 'Twin-stick shooter',
+    trpg: 'Tactical RPG',
+    aerialcombat: 'Aerial Combat',
+    railshooter: 'Rail Shooter',
+    sandbox: 'Sand Box',
+    jrpg: 'JRPG',
+    roguelike: 'Roguelike',
+
+    freecamera: 'Free Camera',
+    aiming: 'Aiming',
+    other: 'Other',
+    shortcuts: 'Shortcuts',
+    lefthanded: 'Left-Handed'
+  }
+];
+
 export const cppGames=[
   {
     image: { type: 'image', src: '/img/covers/RE_Revelations.jpg', alt: 'RE Revelations' },
@@ -217,32 +245,11 @@ export const cppGames=[
   ]}
   defaultSort="name"
   secondarySort="name"
-  labels={{
-    action: 'Action',
-    fps: 'FPS',
-    rpg: 'RPG',
-    actionadventure: 'Action-Adventure',
-    actionrpg: 'Action-RPG',
-    simulation: 'Simulation',
-    survivalhorror: 'Survival-Horror',
-    platformer: 'Platformer',
-    fighting: 'Fighting',
-    education: 'Education',
-    tsshooter: 'Twin-stick shooter',
-    trpg: 'Tactical RPG',
-    aerialcombat: 'Aerial Combat',
-    railshooter: 'Rail Shooter',
-    sandbox: 'Sand Box',
-    jrpg: 'JRPG',
-
-    freecamera: 'Free Camera',
-    aiming: 'Aiming',
-    other: 'Other',
-    shortcuts: 'Shortcuts',
-    lefthanded: 'Left-Handed'
-  }}
+  labels={labels}
   data={cppGames}
 />
+
+<hr />
 
 #### Relevance is rated using the following criteria (/4): 
 
@@ -264,7 +271,7 @@ export const cstickGames=[
     image: { type: 'image', src: '/img/covers/Terraria.jpg', alt: 'Terraria' },
     name: 'Terraria',
     publisher: '505 Games',
-    genre: { type: 'tag', value: 'platformer' },
+    genre: { type: 'tag', value: [ 'platformer', 'sandbox'] },
     rightstick: { type: 'tag', value: 'other' },
     video: { type: 'youtube', id: '' },
     relevance: '3'
@@ -309,7 +316,7 @@ export const cstickGames=[
     image: { type: 'image', src: '/img/covers/BOI.png', alt: 'The Binding of Isaac: Rebirth' },
     name: 'The Binding of Isaac: Rebirth',
     publisher: 'Nicalis',
-    genre: { type: 'tag', value: 'tsshooter' },
+    genre: { type: 'tag', value: ['tsshooter', 'roguelike'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'Ia9YgnV0FiM' },
     relevance: '3'
@@ -333,29 +340,6 @@ export const cstickGames=[
   ]}
   defaultSort="name"
   secondarySort="name"
-  labels={{
-    action: 'Action',
-    fps: 'FPS',
-    rpg: 'RPG',
-    actionadventure: 'Action-Adventure',
-    actionrpg: 'Action-RPG',
-    simulation: 'Simulation',
-    survivalhorror: 'Survival-Horror',
-    platformer: 'Platformer',
-    fighting: 'Fighting',
-    education: 'Education',
-    tsshooter: 'Twin-stick shooter',
-    trpg: 'Tactical RPG',
-    aerialcombat: 'Aerial Combat',
-    railshooter: 'Rail Shooter',
-    sandbox: 'Sand Box',
-    jrpg: 'JRPG',
-
-    freecamera: 'Free Camera',
-    aiming: 'Aiming',
-    other: 'Other',
-    shortcuts: 'Shortcuts',
-    lefthanded: 'Left-Handed'
-  }}
+  labels={labels}
   data={cstickGames}
 />
