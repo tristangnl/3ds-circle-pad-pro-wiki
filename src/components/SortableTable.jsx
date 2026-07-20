@@ -3,7 +3,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const stylesTAGS = {
     'action':           { background: '#fee2e2', color: '#991b1b' },
-'actionrpg':            { background: '#fee2e2', color: '#991b1b' },
+    'actionrpg':        { background: '#fee2e2', color: '#991b1b' },
     'fps':              { background: '#dbeafe', color: '#1e40af' },
     'tps':              { background: '#dbeafe', color: '#1e40af' },
     'rpg':              { background: '#ede9fe', color: '#5b21b6' },
@@ -23,7 +23,9 @@ const stylesTAGS = {
     'lefthanded':       { background: '#ede9fe', color: '#5b21b6' },
     'aerialcombat':     { background: '#ede9fe', color: '#5b21b6' },
     'railshooter':      { background: '#ede9fe', color: '#5b21b6' },
-    'sandbox':      { background: '#ede9fe', color: '#5b21b6' },
+    'sandbox':          { background: '#ede9fe', color: '#5b21b6' },
+    'jrpg':             { background: '#ede9fe', color: '#5b21b6' },
+    'roguelike':        { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
@@ -38,16 +40,17 @@ const styles = {
                   color: 'var(--ifm-color-emphasis-600)', userSelect: 'none', whiteSpace: 'nowrap' },
     thSortable: { cursor: 'pointer' },
     thStatic:   { cursor: 'default' },
-    td: { padding: '8px 6px', borderBottom: '0.5px solid var(--ifm-color-emphasis-200)', verticalAlign: 'middle', textAlign: 'center' },
-    tdCompact: { padding: '4px 4px' },
+    td:         { padding: '8px 6px', borderBottom: '0.5px solid var(--ifm-color-emphasis-200)', verticalAlign: 'middle', textAlign: 'center' },
+    tdCompact:  { padding: '4px 4px' },
     tag:        { borderRadius: '4px', padding: '2px 8px', fontSize: '11px', fontWeight: 600 },
-    image: { width: '100%', maxWidth: '120px', objectFit: 'cover', display: 'inline-block', verticalAlign: 'middle' },
-    ytWrap:     { position: 'relative', width: '100px', overflow: 'hidden', cursor: 'pointer' },
-    ytImg:      { width: '100px', height: '56px', objectFit: 'cover', display: 'block' },
+    tagGroup:   { display: 'inline-flex', flexWrap: 'wrap', gap: '4px', justifyContent: 'center' },
+    image:      { width: '110px', maxWidth: '110px', objectFit: 'contain', display: 'inline-block', verticalAlign: 'middle' },
+    ytWrap:     { position: 'relative', minWidth: '160px', overflow: 'hidden', cursor: 'pointer',display: 'flex', justifyContent: 'center', alignItems: 'center'},
+    ytImg:      { minWidth: '160px', aspectRatio: '16 / 9', objectFit: 'cover', display: 'block' },
     ytBtn:      { position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
-                  width: '28px', height: '28px', background: 'rgba(0,0,0,0.7)', borderRadius: '50%',
+                  width: '40px', height: '40px', background: 'rgba(0,0,0,0.7)', borderRadius: '50%',
                   display: 'flex', alignItems: 'center', justifyContent: 'center' },
-    ytArrow:    { borderLeft: '10px solid white', borderTop: '6px solid transparent', borderBottom: '6px solid transparent', marginLeft: '2px' },
+    ytArrow:    { borderLeft: '14px solid white', borderTop: '9px solid transparent', borderBottom: '9px solid transparent', marginLeft: '3px' },
 };
 
 const isUnsortable = (value) => value?.type === 'youtube' || value?.type === 'image';
@@ -57,7 +60,10 @@ const isNoPadding = (value) => value?.type === 'youtube' || value?.type === 'ima
 const isNoWrap = (value) => value?.type === 'tag';
 
 const getSortValue = (val) => {
-    if (val?.type === 'tag')   return val.value.toLowerCase();
+    if (val?.type === 'tag') {
+        const values = Array.isArray(val.value) ? val.value : [val.value];
+        return values.join('').toLowerCase();
+    }
     if (val?.type === 'badge') return String(val.value);
     return String(val ?? '').toLowerCase();
 };
@@ -68,18 +74,26 @@ function renderCell(value, labels) {
   
     // image
     if (value?.type === 'image') {
-    const imgUrl = useBaseUrl(value.src);
-    return (
-        <a href={imgUrl} target="_blank" rel="noreferrer">
-            <img src={imgUrl} alt={value.alt} style={styles.image} />
-        </a>
-    );
-}
+        const imgUrl = useBaseUrl(value.src);
+        return (
+            <a href={imgUrl} target="_blank" rel="noreferrer">
+                <img src={imgUrl} alt={value.alt} style={styles.image} />
+            </a>
+        );
+    }
     
     //tag
     if (value?.type === 'tag') {
-        const label = labels?.[value.value] ?? value.value;
-        return <span style={{...styles.tag, ...stylesTAGS[value.value]}}>{label}</span>;
+        const values = Array.isArray(value.value) ? value.value : [value.value];
+        return (
+            <span style={styles.tagGroup}>
+                {values.map((v) => (
+                    <span key={v} style={{...styles.tag, ...stylesTAGS[v]}}>
+                        {labels?.[v] ?? v}
+                    </span>
+                ))}
+            </span>
+        );
     }
 
     // youtube
@@ -131,7 +145,8 @@ export default function SortableTable({ columns, data, labels, defaultSort = 'na
                             key={col.key} onClick={() => handleSort(col.key)}
                             style={{
                                 ...styles.th,
-                                ...(isUnsortable(data[0]?.[col.key]) ? styles.thStatic : styles.thSortable)
+                                ...(isUnsortable(data[0]?.[col.key]) ? styles.thStatic : styles.thSortable),
+                                ...(col.minWidth ? { minWidth: col.minWidth } : {})
                             }}
                         >
                         {col.label}
