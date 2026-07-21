@@ -1,4 +1,4 @@
-export const cstickGames=[
+export const cstickOld3dsGames=[
   {
     image: { type: 'image', src: '/img/covers/Terraria.jpg', alt: 'Terraria' },
     name: 'Terraria',
@@ -16,7 +16,7 @@ export const cstickGames=[
     genre: { type: 'tag', value: ['muso', 'actionadventure'] },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'CJCoum4tgtM' },
-    relief: '3ds: ❌ n3ds: ✅',
+    relief: 'o3ds: ❌ n3ds: ✅',
     relevance: '3'
   },
   {
@@ -28,7 +28,10 @@ export const cstickGames=[
     video: { type: 'youtube', id: '' },
     relief: '✅',
     relevance: '3'
-  },
+  }
+];
+
+export const cstickNew3dsGames=[
   {
     image: { type: 'image', src: '/img/covers/FEWarriors.png', alt: 'Fire Emblem Warriors' },
     name: 'Fire Emblem Warriors',
