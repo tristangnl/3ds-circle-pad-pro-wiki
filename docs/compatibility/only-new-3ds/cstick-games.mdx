@@ -12,7 +12,7 @@ import { utilities } from '../../../data/utilities.js';
 Here are games that are not compatible with the Circle Pad Pro, but are only compatible with the c-stick and/or the ZR and/or ZL buttons on New models (New 3DS / New 3DS XL / New 2DS XL).
 
 :::info
-All games compatible with the Circle Pad Pro are natively supported by the C-Stick and the additional shoulder triggers (ZR and ZL) on the New 3DS/2DS (XL). See **[Circle Pad Pro Compatible Games](/docs/compatibility/circle-pad-pro/circle-pad-pro-games)**.
+All games compatible with the Circle Pad Pro are also natively supported by the C-Stick and the additional shoulder triggers (ZR and ZL) on the New 3DS/2DS (XL). See **[Circle Pad Pro Compatible Games](/docs/compatibility/circle-pad-pro/circle-pad-pro-games)**.
 :::
 
 This is mainly due to developers overlooking the Circle Pad Pro, often being unaware of its existence, compared to the New 3DS. It is also related to the hardware limitations of older models. Some games were designed specifically for the New 3DS *(e.g. Xenoblade Chronicles 3D)*, and the Circle Pad Pro requires around [5% extra CPU usage](https://mettrelien) (because of infared communication), which could be unsustainable in more demanding games due to performance drops *(e.g. Super Smash Bros)*.
@@ -20,6 +20,9 @@ This is mainly due to developers overlooking the Circle Pad Pro, often being una
 [Relevance criteria](#relevance-is-rated-using-the-following-criteria-4)
 
 ## Nintendo 3DS Compatible Games
+
+This list contains Nintendo 3DS games that make use of the additional controls, including the C-Stick and ZR/ZL buttons.
+For games exclusive to New models that use the additional controls, see **[New Nintendo 3DS Exclusive Compatible Games](#new-nintendo-3ds-exclusive-compatible-games)**.
 #### {cstickOld3dsGames.length} compatible 3ds games.
 
 <SortableTable
@@ -44,12 +47,22 @@ This is mainly due to developers overlooking the Circle Pad Pro, often being una
   }}
   data={cstickOld3dsGames}
 />
+<hr />
+
+#### Relevance is rated using the following criteria (/4): 
+
+- **T (Triggers)**: Meaningful use of ZL/ZR buttons *<small>(e.g. ❌ Zelda MM3D - triggers simply duplicate L/R)</small>*
+- **S (Stick)**: Proper use of the right stick *<small>(e.g. ❌ Shantae Pirate's Curse - right stick is only used for inventory navigation)</small>*
+- **F (Feature)**: Controls adds new functionality not available on old 3DS *<small>(e.g. ✅ Zelda MM3D - free camera control is not available on old 3ds without CPP | ❌ MH4U -  free camera control is already available with dpad)</small>*
+- **C (Controls)**: Significantly improves gameplay and is essential for the optimal experience *<small>(e.g. ✅ RE Revelations - CPP is a game changer | ❌ FS18 - no significant gameplay benefit)</small>*
 
 <hr />
 
 ## New Nintendo 3DS Exclusive Compatible Games
 
-#### {cstickNew3dsGames.length} compatible new 3ds games.
+This list contains games exclusive to New Nintendo 3DS models (new 3DS, new 3DS XL, new 2DS XL) that make use of the additional controls, including the C-Stick and ZR/ZL buttons.
+
+#### {cstickNew3dsGames.length} compatible new 3ds exclusive games.
 
 <SortableTable
   columns={[
@@ -63,7 +76,6 @@ This is mainly due to developers overlooking the Circle Pad Pro, often being una
     { key: 'video', label: 'Video' },
     { key: 'relief', label: '3D' },
     { key: 'physical', label: 'Physical' },
-    { key: 'relevance', label: 'Relevance'}
   ]}
   defaultSort="name"
   secondarySort="name"
@@ -73,13 +85,3 @@ This is mainly due to developers overlooking the Circle Pad Pro, often being una
   }}
   data={cstickNew3dsGames}
 />
-
-
-<hr />
-
-#### Relevance is rated using the following criteria (/4): 
-
-- **T (Triggers)**: Meaningful use of ZL/ZR buttons *<small>(e.g. ❌ Zelda MM3D - triggers simply duplicate L/R)</small>*
-- **S (Stick)**: Proper use of the right stick *<small>(e.g. ❌ Shantae Pirate's Curse - right stick is only used for inventory navigation)</small>*
-- **F (Feature)**: Adds new functionality not available without the CPP *<small>(e.g. ✅ Zelda MM3D - free camera control is not available without CPP | ❌ MH4U -  free camera control is already available with dpad)</small>*
-- **C (Controls)**: Significantly improves gameplay and is essential for the optimal experience *<small>(e.g. ✅ RE Revelations - CPP is a game changer | ❌ FS18 - no significant gameplay benefit)</small>*

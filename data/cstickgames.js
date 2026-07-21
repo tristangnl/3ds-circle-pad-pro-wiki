@@ -40,7 +40,6 @@ export const cstickNew3dsGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'YubvGvhDjUY' },
     relief: '❌',
-    relevance: '3'
   },
   {
     image: { type: 'image', src: '/img/covers/XC3D.png', alt: 'Xenoblade Chronicles 3D' },
@@ -50,7 +49,6 @@ export const cstickNew3dsGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: '' },
     relief: '✅',
-    relevance: '3'
   },
   {
     image: { type: 'image', src: '/img/covers/BOI.png', alt: 'The Binding of Isaac: Rebirth' },
@@ -60,7 +58,6 @@ export const cstickNew3dsGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'Ia9YgnV0FiM' },
     relief: '❌',
-    relevance: '3'
   },
   {
     image: { type: 'image', src: '/img/covers/Minecraft.png', alt: 'Minecraft: New Nintendo 3DS Edition' },
@@ -70,6 +67,5 @@ export const cstickNew3dsGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '' },
     relief: '❌',
-    relevance: '3'
   }
 ];
