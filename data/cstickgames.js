@@ -58,5 +58,15 @@ export const cstickGames=[
     video: { type: 'youtube', id: 'Ia9YgnV0FiM' },
     relief: '❌',
     relevance: '3'
+  },
+  {
+    image: { type: 'image', src: '/img/covers/Minecraft.png', alt: 'Minecraft: New Nintendo 3DS Edition' },
+    name: 'Minecraft: New Nintendo 3DS Edition',
+    publisher: 'Mojang',
+    genre: { type: 'tag', value: ['sandbox', 'actionadventure'] },
+    rightstick: { type: 'tag', value: 'aiming' },
+    video: { type: 'youtube', id: '' },
+    relief: '❌',
+    relevance: '3'
   }
 ];
