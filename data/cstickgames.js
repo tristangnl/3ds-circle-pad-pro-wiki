@@ -6,33 +6,37 @@ export const cstickGames=[
     genre: { type: 'tag', value: [ 'platformer', 'sandbox'] },
     rightstick: { type: 'tag', value: 'other' },
     video: { type: 'youtube', id: '' },
+    relief: '❌',
     relevance: '3'
   },
   {
-    image: { type: 'image', src: '/img/covers/Zelda_HW.webp', alt: 'Hyrule Warriors' },
+    image: { type: 'image', src: '/img/covers/Zelda_HW.webp', alt: 'Hyrule Warriors: Legends' },
     name: 'Hyrule Warriors: Legends',
     publisher: 'Nintendo',
-    genre: { type: 'tag', value: 'actionadventure' },
+    genre: { type: 'tag', value: ['muso', 'actionadventure'] },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'CJCoum4tgtM' },
+    relief: '3ds: ❌ n3ds: ✅',
     relevance: '3'
   },
   {
-    image: { type: 'image', src: '/img/covers/Smashbros.webp', alt: 'Smashbros' },
+    image: { type: 'image', src: '/img/covers/Smashbros.webp', alt: 'Super Smash Bros. for Nintendo 3DS' },
     name: 'Super Smash Bros. for Nintendo 3DS',
     publisher: 'Nintendo',
     genre: { type: 'tag', value: 'fighting' },
     rightstick: { type: 'tag', value: 'other' },
     video: { type: 'youtube', id: '' },
+    relief: '✅',
     relevance: '3'
   },
   {
     image: { type: 'image', src: '/img/covers/FEWarriors.png', alt: 'Fire Emblem Warriors' },
     name: 'Fire Emblem Warriors',
     publisher: 'Nintendo',
-    genre: { type: 'tag', value: 'actionadventure' },
+    genre: { type: 'tag', value: ['muso', 'actionadventure'] },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'YubvGvhDjUY' },
+    relief: '❌',
     relevance: '3'
   },
   {
@@ -42,6 +46,7 @@ export const cstickGames=[
     genre: { type: 'tag', value: 'jrpg' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: '' },
+    relief: '✅',
     relevance: '3'
   },
   {
@@ -51,6 +56,7 @@ export const cstickGames=[
     genre: { type: 'tag', value: ['tsshooter', 'roguelike'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'Ia9YgnV0FiM' },
+    relief: '❌',
     relevance: '3'
   }
 ];

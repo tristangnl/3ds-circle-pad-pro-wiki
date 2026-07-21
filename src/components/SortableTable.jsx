@@ -26,6 +26,7 @@ const stylesTAGS = {
     'sandbox':          { background: '#ede9fe', color: '#5b21b6' },
     'jrpg':             { background: '#ede9fe', color: '#5b21b6' },
     'roguelike':        { background: '#ede9fe', color: '#5b21b6' },
+    'muso':        { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
@@ -45,8 +46,8 @@ const styles = {
     tag:        { borderRadius: '4px', padding: '2px 8px', fontSize: '11px', fontWeight: 600 },
     tagGroup:   { display: 'inline-flex', flexWrap: 'wrap', gap: '4px', justifyContent: 'center' },
     image:      { width: '110px', maxWidth: '110px', objectFit: 'contain', display: 'inline-block', verticalAlign: 'middle' },
-    ytWrap:     { position: 'relative', minWidth: '160px', overflow: 'hidden', cursor: 'pointer',display: 'flex', justifyContent: 'center', alignItems: 'center'},
-    ytImg:      { minWidth: '160px', aspectRatio: '16 / 9', objectFit: 'cover', display: 'block' },
+    ytWrap:     { position: 'relative', width: '160px', overflow: 'hidden', cursor: 'pointer',display: 'flex', justifyContent: 'center', alignItems: 'center'},
+    ytImg:      { width: '160px', aspectRatio: '16 / 9', objectFit: 'cover', display: 'block' },
     ytBtn:      { position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
                   width: '40px', height: '40px', background: 'rgba(0,0,0,0.7)', borderRadius: '50%',
                   display: 'flex', alignItems: 'center', justifyContent: 'center' },

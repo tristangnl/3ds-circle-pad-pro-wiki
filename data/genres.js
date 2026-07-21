@@ -16,4 +16,5 @@ export const genres= {
   sandbox: 'Sand Box',
   jrpg: 'JRPG',
   roguelike: 'Roguelike',
+  muso: 'Musô',
 };
