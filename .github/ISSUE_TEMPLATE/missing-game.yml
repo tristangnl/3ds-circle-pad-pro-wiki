@@ -1,9 +1,10 @@
 name: Missing software 🎮
 description: Report a game or a homebrew that is missing from the compatibility list.
-title: "[Missing Software]: "
+title: "[Missing Software]: <software name>"
 labels:
   - "missing software"
-
+assignees:
+  - tristangnl
 body:
   - type: markdown
     attributes:
@@ -37,7 +38,7 @@ body:
   - type: input
     id: source
     attributes:
-      label: Source
+      label: Source (optionnal)
       description: Link to a source confirming compatibility (video of gameplay, forum, website, github repository...).
       placeholder: https://...
     validations:
