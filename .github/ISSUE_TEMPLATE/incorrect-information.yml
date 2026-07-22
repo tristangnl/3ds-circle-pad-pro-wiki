@@ -1,0 +1,35 @@
+name: Incorrect information ❌
+description: Report a game or a homebrew that is missing from the compatibility list.
+title: "[incorrect Information]: <please complete>"
+labels:
+  - "incorrect information"
+assignees:
+  - tristangnl
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## incorrect information report
+  - type: input
+    id: page
+    attributes:
+      label: Which page contains the error?
+      description: Provide the page title or link.
+      placeholder: "Circle Pad Pro Compatible Games"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source (optionnal)
+      description: Link to a source confirming error (video of gameplay, forum, website, wiki...).
+      placeholder: https://...
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Describe the issue
+      description: Explain the error and provide the correct information.
+    validations:
+      required: true
