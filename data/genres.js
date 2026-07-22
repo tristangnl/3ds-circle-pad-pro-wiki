@@ -19,5 +19,8 @@ export const genres= {
   roguelike: 'Roguelike',
   muso: 'Musô',
   survival: 'Survival',
-  openworld: 'Open World'
+  openworld: 'Open World',
+  sports: 'Sports',
+  btu: 'Beat \'em up',
+  metroidvania: 'Metroidvania',
 };

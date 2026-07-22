@@ -29,6 +29,9 @@ const stylesTAGS = {
     'muso':             { background: '#ede9fe', color: '#5b21b6' },
     'survival':         { background: '#ede9fe', color: '#5b21b6' },
     'openworld':        { background: '#ede9fe', color: '#5b21b6' },
+    'sports':           { background: '#ede9fe', color: '#5b21b6' },
+    'btu':              { background: '#ede9fe', color: '#5b21b6' },
+    'metroidvania':     { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
