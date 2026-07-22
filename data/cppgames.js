@@ -7,6 +7,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '7uBsUoqeZ10' },
     relief: '✅',
+    physical: '✅',
     relevance: '4 (T,S,F,C)'
   },
   {
@@ -17,6 +18,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'hckkNtCmzLU' },
     relief: '✅',
+    physical: '✅',
     relevance: '3 (S,F,C)'
   },
   {
@@ -26,6 +28,8 @@ export const cppGames=[
     genre: { type: 'tag', value: 'simulation' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'Oh8fQzmw5LQ' },
+    relief: '✅',
+    physical: '✅',
     relevance: '2'
   },
   {
@@ -36,6 +40,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'fYvLKkex4TU' },
     relief: '✅',
+    physical: '✅',
     relevance: '4'
   },
   {
@@ -46,7 +51,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'o_6hgxjr1go' },
     relief: '✅',
-    comment: { type: 'text', value: 'Digital Only' },
+    physical: '❌',
     relevance: '3 (T,S,C)'
   },
   {
@@ -56,6 +61,8 @@ export const cppGames=[
     genre: { type: 'tag', value: 'platformer' },
     rightstick: { type: 'tag', value: 'shortcuts' },
     video: { type: 'youtube', id: 'KgGtn5sBMrQ' },
+    relief: '✅',
+    physical: '✅',
     relevance: '0'
   },
   {
@@ -65,6 +72,8 @@ export const cppGames=[
     genre: { type: 'tag', value: 'actionadventure' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'LQnyW9itf44' },
+    relief: '❌',
+    physical: '✅',
     relevance: '1'
   },
   {
@@ -75,6 +84,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'fJP9MKYDZKQ' },
     relief: '✅',
+    physical: '✅',
     relevance: '2'
   },
   {
@@ -85,7 +95,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'other' },
     video: { type: 'youtube', id: 'Gu2ZvxAuSA8' },
     relief: '✅',
-    comment: { type: 'text', value: 'Digital Only' },
+    physical: '❌',
     relevance: '4'
   },
   {
@@ -96,7 +106,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'FOSQp95EBdc' },
     relief: '✅',
-    comment: { type: 'text', value: 'Digital Only in EUR' },
+    physical: '✅ only in JPN',
     relevance: '4'
   },
   {
@@ -107,7 +117,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '3Q5nWPiVr5o' },
     relief: '✅',
-    comment: { type: 'text', value: 'Exclu NA | Digital Only' },
+    physical: '❌ Exclu NA',
     relevance: '4'
   },
   {
@@ -118,7 +128,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '4WQDjl3Sweo' },
     relief: '✅',
-    comment: { type: 'text', value: 'Digital Only' },
+    physical: '❌',
     relevance: '4'
   },
   {
@@ -129,7 +139,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'PIzFI9zRUas' },
     relief: '✅',
-    comment: { type: 'text', value: '' },
+    physical: '✅',
     relevance: ''
   },
   {
@@ -140,7 +150,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'M0Z2IFAWcw0' },
     relief: '✅',
-    comment: { type: 'text', value: '' },
+    physical: '✅',
     relevance: ''
   },
   {
@@ -151,7 +161,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: '4IrL5ve3DGU' },
     relief: '✅',
-    comment: { type: 'text', value: 'Digital Only' },
+    physical: '❌',
     relevance: ''
   },
   {
@@ -162,7 +172,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'lefthanded' },
     video: { type: 'youtube', id: '' },
     relief: '✅',
-    comment: { type: 'text', value: '' },
+    physical: '✅',
     relevance: ''
   },
   {
@@ -173,7 +183,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'wq27RImsnq0' },
     relief: '✅',
-    comment: { type: 'text', value: 'Digital Only' },
+    physical: '❌',
     relevance: ''
   },
   {
@@ -184,7 +194,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'jUHYuR7bLL0' },
     relief: '✅',
-    comment: { type: 'text', value: 'Digital Only' },
+    physical: '❌',
     relevance: ''
   },
   {
@@ -194,7 +204,8 @@ export const cppGames=[
     genre: { type: 'tag', value: ['actionadventure', 'sandbox'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'gtoelsSlniA' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: ''
   }
 ];

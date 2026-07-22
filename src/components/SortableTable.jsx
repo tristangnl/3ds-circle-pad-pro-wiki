@@ -26,7 +26,9 @@ const stylesTAGS = {
     'sandbox':          { background: '#ede9fe', color: '#5b21b6' },
     'jrpg':             { background: '#ede9fe', color: '#5b21b6' },
     'roguelike':        { background: '#ede9fe', color: '#5b21b6' },
-    'muso':        { background: '#ede9fe', color: '#5b21b6' },
+    'muso':             { background: '#ede9fe', color: '#5b21b6' },
+    'survival':         { background: '#ede9fe', color: '#5b21b6' },
+    'openworld':        { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {

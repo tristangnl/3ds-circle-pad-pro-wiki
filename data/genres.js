@@ -1,6 +1,7 @@
 export const genres= {
   action: 'Action',
   fps: 'FPS',
+  tps: 'TPS',
   rpg: 'RPG',
   actionadventure: 'Action-Adventure',
   actionrpg: 'Action-RPG',
@@ -17,4 +18,6 @@ export const genres= {
   jrpg: 'JRPG',
   roguelike: 'Roguelike',
   muso: 'Musô',
+  survival: 'Survival',
+  openworld: 'Open World'
 };
