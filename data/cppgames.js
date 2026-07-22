@@ -1,38 +1,46 @@
 export const cppGames=[
   {
-    image: { type: 'image', src: '/img/covers/RE_Revelations.jpg', alt: 'RE Revelations' },
+    image: { type: 'image', src: '/img/covers/RE_Revelations.jpg', alt: 'Resident Evil: Revelations' },
     name: 'Resident Evil: Revelations',
     publisher: 'Capcom',
-    genre: { type: 'tag', value: 'survivalhorror' },
+    genre: { type: 'tag', value: ['tps','survivalhorror'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '7uBsUoqeZ10' },
+    relief: '✅',
+    physical: '✅',
     relevance: '4 (T,S,F,C)'
   },
   {
-    image: { type: 'image', src: '/img/covers/Zelda_MM3D.jpg', alt: 'Zelda Majora\'s Mask 3d' },
+    image: { type: 'image', src: '/img/covers/Zelda_MM3D.jpg', alt: 'The Legend of Zelda: Majora\'s Mask 3D' },
     name: 'The Legend of Zelda: Majora\'s Mask 3D',
     publisher: 'Nintendo',
     genre: { type: 'tag', value: 'actionadventure' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'hckkNtCmzLU' },
+    relief: '✅',
+    physical: '✅',
     relevance: '3 (S,F,C)'
   },
   {
-    image: { type: 'image', src: '/img/covers/FS18.webp', alt: 'FS 18' },
+    image: { type: 'image', src: '/img/covers/FS18.webp', alt: 'Farming Simulator 18' },
     name: 'Farming Simulator 18',
     publisher: 'GIANTS Software',
     genre: { type: 'tag', value: 'simulation' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'Oh8fQzmw5LQ' },
+    relief: '✅',
+    physical: '✅',
     relevance: '2'
   },
   {
-    image: { type: 'image', src: '/img/covers/MH4U.webp', alt: 'MH4U' },
+    image: { type: 'image', src: '/img/covers/MH4U.webp', alt: 'Monster Hunter 4 Ultimate' },
     name: 'Monster Hunter 4 Ultimate',
     publisher: 'Capcom',
     genre: { type: 'tag', value: 'actionrpg' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'fYvLKkex4TU' },
+    relief: '✅',
+    physical: '✅',
     relevance: '4'
   },
   {
@@ -42,34 +50,41 @@ export const cppGames=[
     genre: { type: 'tag', value: 'tps' },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'o_6hgxjr1go' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: '3 (T,S,C)'
   },
   {
-    image: { type: 'image', src: '/img/covers/ShantaePiratesCurse.webp', alt: 'Shantae PC' },
+    image: { type: 'image', src: '/img/covers/ShantaePiratesCurse.webp', alt: 'Shantae and the Pirate\'s Curse' },
     name: 'Shantae and the Pirate\'s Curse',
     publisher: 'WayForward',
-    genre: { type: 'tag', value: 'platformer' },
+    genre: { type: 'tag', value: ['platformer','metroidvania'] },
     rightstick: { type: 'tag', value: 'shortcuts' },
     video: { type: 'youtube', id: 'KgGtn5sBMrQ' },
+    relief: '✅',
+    physical: '✅',
     relevance: '0'
   },
   {
-    image: { type: 'image', src: '/img/covers/OnePieceUWR.webp', alt: 'OnePiece UWR' },
+    image: { type: 'image', src: '/img/covers/OnePieceUWR.webp', alt: 'OnePiece: Unlimited World Red' },
     name: 'One Piece: Unlimited World Red',
     publisher: 'BANDAI NAMCO Entertainment',
     genre: { type: 'tag', value: 'actionadventure' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'LQnyW9itf44' },
+    relief: '❌',
+    physical: '✅',
     relevance: '1'
   },
   {
-    image: { type: 'image', src: '/img/covers/SK2DC.webp', alt: 'Senran Kagura 2' },
+    image: { type: 'image', src: '/img/covers/SK2DC.webp', alt: 'Senran Kagura 2: Deep Crimson' },
     name: 'Senran Kagura 2: Deep Crimson',
     publisher: 'Marvelous Interactive',
-    genre: { type: 'tag', value: 'fighting' },
+    genre: { type: 'tag', value: 'btu' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'fJP9MKYDZKQ' },
+    relief: '✅',
+    physical: '✅',
     relevance: '2'
   },
   {
@@ -79,17 +94,19 @@ export const cppGames=[
     genre: { type: 'tag', value: 'education' },
     rightstick: { type: 'tag', value: 'other' },
     video: { type: 'youtube', id: 'Gu2ZvxAuSA8' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: '4'
   },
   {
-    image: { type: 'image', src: '/img/covers/AOTHIC.webp', alt: 'AOT humanity in chains' },
+    image: { type: 'image', src: '/img/covers/AOTHIC.webp', alt: 'Attack on Titan: Humanity in Chains' },
     name: 'Attack on Titan: Humanity in Chains',
     publisher: 'Atlus',
     genre: { type: 'tag', value: 'action' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'FOSQp95EBdc' },
-    comment: { type: 'text', value: 'Digital Only in EUR' },
+    relief: '✅',
+    physical: '✅ only in JPN',
     relevance: '4'
   },
   {
@@ -99,7 +116,8 @@ export const cppGames=[
     genre: { type: 'tag', value: 'fps' },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '3Q5nWPiVr5o' },
-    comment: { type: 'text', value: 'Exclu NA | Digital Only' },
+    relief: '✅',
+    physical: '❌ Exclu NA',
     relevance: '4'
   },
   {
@@ -109,17 +127,19 @@ export const cppGames=[
     genre: { type: 'tag', value: 'tsshooter' },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '4WQDjl3Sweo' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: '4'
   },
   {
-    image: { type: 'image', src: '/img/covers/CodeNameSteam.webp', alt: 'Code Name Steam' },
+    image: { type: 'image', src: '/img/covers/CodeNameSteam.webp', alt: 'Code Name: Steam' },
     name: 'Code Name: Steam',
     publisher: 'INTELLIGENT SYSTEMS',
-    genre: { type: 'tag', value: 'trpg' },
+    genre: { type: 'tag', value: ['tps','trpg'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'PIzFI9zRUas' },
-    comment: { type: 'text', value: '' },
+    relief: '✅',
+    physical: '✅',
     relevance: ''
   },
   {
@@ -129,7 +149,8 @@ export const cppGames=[
     genre: { type: 'tag', value: 'actionadventure' },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'M0Z2IFAWcw0' },
-    comment: { type: 'text', value: '' },
+    relief: '✅',
+    physical: '✅',
     relevance: ''
   },
   {
@@ -139,47 +160,52 @@ export const cppGames=[
     genre: { type: 'tag', value: 'aerialcombat' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: '4IrL5ve3DGU' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: ''
   },
   {
     image: { type: 'image', src: '/img/covers/KidIcarusUprising.jpg', alt: 'Kid Icarus Uprising' },
     name: 'Kid Icarus Uprising',
     publisher: 'Nintendo',
-    genre: { type: 'tag', value: 'railshooter' },
+    genre: { type: 'tag', value: ['tps','railshooter'] },
     rightstick: { type: 'tag', value: 'lefthanded' },
     video: { type: 'youtube', id: '' },
-    comment: { type: 'text', value: '' },
+    relief: '✅',
+    physical: '✅',
     relevance: ''
   },
   {
     image: { type: 'image', src: '/img/covers/MetroidPrimeBlastBall.jpg', alt: 'Metroid Prime: Blast Ball' },
     name: 'Metroid Prime: Blast Ball',
     publisher: 'Nintendo',
-    genre: { type: 'tag', value: 'fps' },
+    genre: { type: 'tag', value: ['fps', 'sports'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'wq27RImsnq0' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: ''
   },
   {
     image: { type: 'image', src: '/img/covers/CC3D.png', alt: 'Cube Creator 3D' },
     name: 'Cube Creator 3D',
     publisher: 'Big John Games',
-    genre: { type: 'tag', value: 'actionadventure' },
+    genre: { type: 'tag', value: ['sandbox', 'survival', 'actionadventure'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'jUHYuR7bLL0' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: ''
   },
   {
     image: { type: 'image', src: '/img/covers/CCDX.png', alt: 'Cube Creator DX' },
     name: 'Cube Creator DX',
     publisher: 'Big John Games',
-    genre: { type: 'tag', value: 'actionadventure' },
+    genre: { type: 'tag', value: ['sandbox', 'survival', 'actionadventure'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'gtoelsSlniA' },
-    comment: { type: 'text', value: 'Digital Only' },
+    relief: '✅',
+    physical: '❌',
     relevance: ''
   }
 ];

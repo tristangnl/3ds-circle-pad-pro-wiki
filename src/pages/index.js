@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/compatibility/games">
+            to="/docs/compatibility/circle-pad-pro/circle-pad-pro-games">
             See All Games 🎮
           </Link>
         </div>

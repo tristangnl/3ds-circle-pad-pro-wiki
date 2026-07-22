@@ -30,6 +30,9 @@ const sidebars = {
     },
   ],
    */
+  //utiliser ça pour quelles soient ouvertes par défault et non repliables:
+  //collapsible: false,
+  //collapsed: false
 };
 
 export default sidebars;

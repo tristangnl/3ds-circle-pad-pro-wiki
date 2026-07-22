@@ -1,6 +1,7 @@
 export const genres= {
   action: 'Action',
   fps: 'FPS',
+  tps: 'TPS',
   rpg: 'RPG',
   actionadventure: 'Action-Adventure',
   actionrpg: 'Action-RPG',
@@ -16,4 +17,10 @@ export const genres= {
   sandbox: 'Sand Box',
   jrpg: 'JRPG',
   roguelike: 'Roguelike',
+  muso: 'Musô',
+  survival: 'Survival',
+  openworld: 'Open World',
+  sports: 'Sports',
+  btu: 'Beat \'em up',
+  metroidvania: 'Metroidvania',
 };
