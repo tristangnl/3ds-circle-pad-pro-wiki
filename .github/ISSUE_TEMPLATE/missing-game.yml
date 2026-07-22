@@ -1,0 +1,50 @@
+name: Missing software 🎮
+description: Report a game or a homebrew that is missing from the compatibility list.
+title: "[Missing Software]: "
+labels:
+  - "missing software"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Missing software report
+        Please make sure the game is not already listed or reported in the existing issues before submitting a request.
+  - type: dropdown
+    id: compatibility
+    attributes:
+      label: What is the compatibility type?
+      multiple: false
+      options:
+        - Officially compatible Circle Pad Pro game
+        - Officially compatible with C-Stick and/or ZR/ZL only on New models
+        - New Nintendo 3DS exclusive game supporting C-Stick or ZR/ZL
+        - Homebrew supporting Circle Pad Pro
+        - Homebrew supporting C-Stick and/or ZR/ZL on New models
+        - Patch enabling Circle Pad Pro support for a game
+        - Patch enabling C-Stick and/or ZR/ZL support for a game on New models
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: software
+    attributes:
+      label: Software name
+      description: Official name of the game/homebrew/patch.
+      placeholder: "Resident Evil: Revelations"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link to a source confirming compatibility (video of gameplay, forum, website, github repository...).
+      placeholder: https://...
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional information?
+    validations:
+      required: false
