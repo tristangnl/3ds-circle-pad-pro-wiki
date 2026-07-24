@@ -1,5 +1,5 @@
 name: Incorrect information ❌
-description: Report a game or a homebrew that is missing from the compatibility list.
+description: Reports incorrect information on the website.
 title: "[incorrect Information]: <please complete>"
 labels:
   - "incorrect information"

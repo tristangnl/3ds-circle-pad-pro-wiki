@@ -31,6 +31,17 @@ export const cstickOld3dsGames=[
     relief: '✅',
     physical: '✅',
     relevance: '3'
+  },
+  {
+    image: { type: 'image', src: '/img/covers/CaptainToadTT.png', alt: 'Captain Toad: Treasure Tracker' },
+    name: 'Captain Toad: Treasure Tracker',
+    publisher: 'Nintendo',
+    genre: { type: 'tag', value: ['platformer', 'puzzle'] },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: 'WI7N3eK0iUY' },
+    relief: '✅',
+    physical: '✅',
+    relevance: '3'
   }
 ];
 
