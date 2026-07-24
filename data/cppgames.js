@@ -207,5 +207,27 @@ export const cppGames=[
     relief: '✅',
     physical: '❌',
     relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/SteelDiverSB.png', alt: 'Steel Diver: Sub Wars' },
+    name: 'Steel Diver: Sub Wars',
+    publisher: 'Nintendo',
+    genre: { type: 'tag', value: ['fps', 'action'] },
+    rightstick: { type: 'tag', value: 'aiming' },
+    video: { type: 'youtube', id: 'EneC9MuOxCo' },
+    relief: '✅',
+    physical: '❌',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/FFExplorers.jpg', alt: 'FINAL FANTASY EXPLORERS' },
+    name: 'FINAL FANTASY EXPLORERS',
+    publisher: 'Square Enix',
+    genre: { type: 'tag', value: 'actionrpg' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: 'q7vlWidRWZQ' },
+    relief: '❌',
+    physical: '✅',
+    relevance: ''
   }
 ];

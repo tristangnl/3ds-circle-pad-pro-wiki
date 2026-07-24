@@ -32,6 +32,7 @@ const stylesTAGS = {
     'sports':           { background: '#ede9fe', color: '#5b21b6' },
     'btu':              { background: '#ede9fe', color: '#5b21b6' },
     'metroidvania':     { background: '#ede9fe', color: '#5b21b6' },
+    'puzzle':           { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {
