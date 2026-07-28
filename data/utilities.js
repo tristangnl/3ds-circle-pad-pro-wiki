@@ -3,5 +3,6 @@ export const utilities= {
   aiming: 'Aiming',
   other: 'Other',
   shortcuts: 'Shortcuts',
-  lefthanded: 'Left-Handed'
+  lefthanded: 'Left-Handed',
+  configurable: 'Configurable'
 };
