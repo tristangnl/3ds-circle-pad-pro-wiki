@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const stylesTAGS = {
+    'aiming':           { background: '#fee2e2', color: '#991b1b' },
+    'freecamera':       { background: '#dbeafe', color: '#1e40af' },
+    'other':            { background: '#dbeafe', color: '#1e40af' },
+    'shortcuts':        { background: '#dbeafe', color: '#1e40af' },
+    'lefthanded':       { background: '#ede9fe', color: '#5b21b6' },
+    'configurable':     { background: '#ede9fe', color: '#5b21b6' },
     'action':           { background: '#fee2e2', color: '#991b1b' },
     'actionrpg':        { background: '#fee2e2', color: '#991b1b' },
     'fps':              { background: '#dbeafe', color: '#1e40af' },
@@ -16,11 +22,6 @@ const stylesTAGS = {
     'education':        { background: '#d1fae5', color: '#065f46' },
     'tsshooter':        { background: '#d1fae5', color: '#065f46' },
     'trpg':             { background: '#d1fae5', color: '#065f46' },
-    'aiming':           { background: '#fee2e2', color: '#991b1b' },
-    'freecamera':       { background: '#dbeafe', color: '#1e40af' },
-    'other':            { background: '#dbeafe', color: '#1e40af' },
-    'shortcuts':        { background: '#dbeafe', color: '#1e40af' },
-    'lefthanded':       { background: '#ede9fe', color: '#5b21b6' },
     'aerialcombat':     { background: '#ede9fe', color: '#5b21b6' },
     'railshooter':      { background: '#ede9fe', color: '#5b21b6' },
     'sandbox':          { background: '#ede9fe', color: '#5b21b6' },
@@ -33,6 +34,8 @@ const stylesTAGS = {
     'btu':              { background: '#ede9fe', color: '#5b21b6' },
     'metroidvania':     { background: '#ede9fe', color: '#5b21b6' },
     'puzzle':           { background: '#ede9fe', color: '#5b21b6' },
+    'compilation':           { background: '#ede9fe', color: '#5b21b6' },
+    'arcade':           { background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {

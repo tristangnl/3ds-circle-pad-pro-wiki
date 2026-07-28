@@ -24,4 +24,6 @@ export const genres= {
   btu: 'Beat \'em up',
   metroidvania: 'Metroidvania',
   puzzle: 'Puzzle',
+  compilation: 'Compilation',
+  arcade: 'Arcade',
 };

@@ -92,7 +92,7 @@ export const cppGames=[
     name: 'SmileBASIC',
     publisher: 'SmileBoom',
     genre: { type: 'tag', value: 'education' },
-    rightstick: { type: 'tag', value: 'other' },
+    rightstick: { type: 'tag', value: 'configurable' },
     video: { type: 'youtube', id: 'Gu2ZvxAuSA8' },
     relief: '✅',
     physical: '❌',
@@ -228,6 +228,61 @@ export const cppGames=[
     video: { type: 'youtube', id: 'q7vlWidRWZQ' },
     relief: '❌',
     physical: '✅',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/KingdomHeartsDDD3D.jpg', alt: 'Kingdom Hearts 3D: Dream Drop Distance' },
+    name: 'Kingdom Hearts 3D: Dream Drop Distance',
+    publisher: 'Square Enix',
+    genre: { type: 'tag', value: 'actionrpg' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: 'RiOVXgLq-PE' },
+    relief: '✅',
+    physical: '✅',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/SEGA3DClassicsCollection.jpg', alt: 'SEGA 3D Classics Collection' },
+    name: 'SEGA 3D Classics Collection',
+    publisher: 'SEGA',
+    genre: { type: 'tag', value: 'compilation' },
+    rightstick: { type: 'tag', value: 'configurable' },
+    video: { type: 'youtube', id: 'YpQWgGuygQ0' },
+    relief: '✅',
+    physical: '✅',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/GalaxyForceII.png', alt: '3D Galaxy Force II' },
+    name: '3D Galaxy Force II',
+    publisher: 'SEGA',
+    genre: { type: 'tag', value: ['arcade','aerialcombat','railshooter'] },
+    rightstick: { type: 'tag', value: 'configurable' },
+    video: { type: 'youtube', id: 'l_z8QtkHuqE' },
+    relief: '✅',
+    physical: '❌',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/AfterBurnerII.png', alt: '3D After Burner II' },
+    name: '3D After Burner II',
+    publisher: 'SEGA',
+    genre: { type: 'tag', value: ['arcade','aerialcombat','railshooter'] },
+    rightstick: { type: 'tag', value: 'configurable' },
+    video: { type: 'youtube', id: 'g_sN39PMNCA' },
+    relief: '✅',
+    physical: '❌',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/ThunderBlade.png', alt: '3D Thunder Blade' },
+    name: '3D Thunder Blade',
+    publisher: 'SEGA',
+    genre: { type: 'tag', value: ['arcade','aerialcombat','railshooter'] },
+    rightstick: { type: 'tag', value: 'configurable' },
+    video: { type: 'youtube', id: '3jln3QbkaY8' },
+    relief: '✅',
+    physical: '❌',
     relevance: ''
   }
 ];

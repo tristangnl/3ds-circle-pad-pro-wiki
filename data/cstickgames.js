@@ -5,7 +5,7 @@ export const cstickOld3dsGames=[
     publisher: '505 Games',
     genre: { type: 'tag', value: [ 'platformer', 'sandbox'] },
     rightstick: { type: 'tag', value: 'other' },
-    video: { type: 'youtube', id: '' },
+    video: { type: 'youtube', id: '3FLkdWbAzBs' },
     relief: '❌',
     physical: '✅',
     relevance: '3'
