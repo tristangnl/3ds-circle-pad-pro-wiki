@@ -42,6 +42,28 @@ export const cstickOld3dsGames=[
     relief: '✅',
     physical: '✅',
     relevance: '3'
+  },
+  {
+    image: { type: 'image', src: '/img/covers/FireEmblemEchoesSoV.png', alt: 'Fire Emblem Echoes: Shadows of Valentia' },
+    name: 'Fire Emblem Echoes: Shadows of Valentia',
+    publisher: 'Nintendo',
+    genre: { type: 'tag', value: 'trpg' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: '' },
+    relief: '✅',
+    physical: '✅',
+    relevance: '?'
+  },
+  {
+    image: { type: 'image', src: '/img/covers/MHStories.png', alt: 'Monster Hunter Stories' },
+    name: 'Monster Hunter Stories',
+    publisher: 'Capcom',
+    genre: { type: 'tag', value: 'rpg' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: '' },
+    relief: '✅',
+    physical: '✅',
+    relevance: '?'
   }
 ];
 

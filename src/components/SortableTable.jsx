@@ -34,8 +34,9 @@ const stylesTAGS = {
     'btu':              { background: '#ede9fe', color: '#5b21b6' },
     'metroidvania':     { background: '#ede9fe', color: '#5b21b6' },
     'puzzle':           { background: '#ede9fe', color: '#5b21b6' },
-    'compilation':           { background: '#ede9fe', color: '#5b21b6' },
+    'compilation':      { background: '#ede9fe', color: '#5b21b6' },
     'arcade':           { background: '#ede9fe', color: '#5b21b6' },
+    'tacticalespionage':{ background: '#ede9fe', color: '#5b21b6' },
 };
 
 const styles = {

@@ -106,7 +106,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'FOSQp95EBdc' },
     relief: '✅',
-    physical: '✅ only in JPN',
+    physical: '✅ in JPN / ❌',
     relevance: '4'
   },
   {
@@ -128,7 +128,7 @@ export const cppGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: '4WQDjl3Sweo' },
     relief: '✅',
-    physical: '❌',
+    physical: '✅ in JPN and NA / ❌',
     relevance: '4'
   },
   {
@@ -283,6 +283,39 @@ export const cppGames=[
     video: { type: 'youtube', id: '3jln3QbkaY8' },
     relief: '✅',
     physical: '❌',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/MetroidPrimeFederationForce.png', alt: 'Metroid Prime: Federation Force' },
+    name: 'Metroid Prime: Federation Force',
+    publisher: 'Nintendo',
+    genre: { type: 'tag', value: 'fps' },
+    rightstick: { type: 'tag', value: 'aiming' },
+    video: { type: 'youtube', id: '1kfGL0eGi3o' },
+    relief: '✅',
+    physical: '✅',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/ExTroopers.webp', alt: 'E.X. Troopers' },
+    name: 'E.X. Troopers',
+    publisher: 'Capcom',
+    genre: { type: 'tag', value: 'tps' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: 'AAmtgZGqcis' },
+    relief: '✅',
+    physical: '✅ Exclu JPN',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/MGS3D.jpg', alt: 'Metal Gear Solid: Snake Eater 3D' },
+    name: 'Metal Gear Solid: Snake Eater 3D',
+    publisher: 'Konami',
+    genre: { type: 'tag', value: ['actionadventure','survival','tacticalespionage'] },
+    rightstick: { type: 'tag', value: 'freecamera?' },
+    video: { type: 'youtube', id: '' },
+    relief: '✅',
+    physical: '✅',
     relevance: ''
   }
 ];
