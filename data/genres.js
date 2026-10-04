@@ -26,4 +26,5 @@ export const genres= {
   puzzle: 'Puzzle',
   compilation: 'Compilation',
   arcade: 'Arcade',
+  tacticalespionage: 'Tactical Espionage',
 };
