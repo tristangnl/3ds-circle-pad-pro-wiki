@@ -60,7 +60,7 @@ export const cstickOld3dsGames=[
     publisher: 'Capcom',
     genre: { type: 'tag', value: 'rpg' },
     rightstick: { type: 'tag', value: 'freecamera' },
-    video: { type: 'youtube', id: '' },
+    video: { type: 'youtube', id: '1r1lKQ1XaSA' },
     relief: '✅',
     physical: '✅',
     relevance: '?'
@@ -106,6 +106,6 @@ export const cstickNew3dsGames=[
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'G4iyDVa8Rgc' },
     relief: '❌',
-    physical: '✅ NA only',
+    physical: '✅ in NA / ❌',
   }
 ];

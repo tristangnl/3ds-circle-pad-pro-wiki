@@ -134,7 +134,7 @@ export const cppGames=[
   {
     image: { type: 'image', src: '/img/covers/CodeNameSteam.webp', alt: 'Code Name: Steam' },
     name: 'Code Name: Steam',
-    publisher: 'INTELLIGENT SYSTEMS',
+    publisher: 'Nintendo',
     genre: { type: 'tag', value: ['tps','trpg'] },
     rightstick: { type: 'tag', value: 'aiming' },
     video: { type: 'youtube', id: 'PIzFI9zRUas' },
@@ -170,7 +170,7 @@ export const cppGames=[
     publisher: 'Nintendo',
     genre: { type: 'tag', value: ['tps','railshooter'] },
     rightstick: { type: 'tag', value: 'lefthanded' },
-    video: { type: 'youtube', id: '' },
+    video: { type: 'youtube', id: 'PA-oW7RAsgA' },
     relief: '✅',
     physical: '✅',
     relevance: ''
@@ -312,8 +312,8 @@ export const cppGames=[
     name: 'Metal Gear Solid: Snake Eater 3D',
     publisher: 'Konami',
     genre: { type: 'tag', value: ['actionadventure','survival','tacticalespionage'] },
-    rightstick: { type: 'tag', value: 'freecamera?' },
-    video: { type: 'youtube', id: '' },
+    rightstick: { type: 'tag', value: ['freecamera', 'aiming'] },
+    video: { type: 'youtube', id: 'Eyf_3C0qUT8' },
     relief: '✅',
     physical: '✅',
     relevance: ''
