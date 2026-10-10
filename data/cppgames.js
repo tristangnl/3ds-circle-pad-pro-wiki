@@ -68,7 +68,7 @@ export const cppGames=[
   {
     image: { type: 'image', src: '/img/covers/OnePieceUWR.webp', alt: 'OnePiece: Unlimited World Red' },
     name: 'One Piece: Unlimited World Red',
-    publisher: 'BANDAI NAMCO Entertainment',
+    publisher: 'Bandai Namco Entertainment',
     genre: { type: 'tag', value: 'actionadventure' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'LQnyW9itf44' },
@@ -314,6 +314,17 @@ export const cppGames=[
     genre: { type: 'tag', value: ['actionadventure','survival','tacticalespionage'] },
     rightstick: { type: 'tag', value: ['freecamera', 'aiming'] },
     video: { type: 'youtube', id: 'Eyf_3C0qUT8' },
+    relief: '✅',
+    physical: '✅',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/AceCombatAHL+.webp', alt: 'Ace Combat: Assault Horizon Legacy +' },
+    name: 'Ace Combat: Assault Horizon Legacy +',
+    publisher: 'Bandai Namco Entertainment',
+    genre: { type: 'tag', value: 'aerialcombat' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: 'f-EJHCYkj-Q' },
     relief: '✅',
     physical: '✅',
     relevance: ''
