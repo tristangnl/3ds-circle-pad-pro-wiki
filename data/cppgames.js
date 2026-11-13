@@ -101,7 +101,7 @@ export const cppGames=[
   {
     image: { type: 'image', src: '/img/covers/AOTHIC.webp', alt: 'Attack on Titan: Humanity in Chains' },
     name: 'Attack on Titan: Humanity in Chains',
-    publisher: 'Atlus',
+    publisher: 'Spike Chunsoft / Atlus',
     genre: { type: 'tag', value: 'action' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'FOSQp95EBdc' },
@@ -325,6 +325,28 @@ export const cppGames=[
     genre: { type: 'tag', value: 'aerialcombat' },
     rightstick: { type: 'tag', value: 'freecamera' },
     video: { type: 'youtube', id: 'f-EJHCYkj-Q' },
+    relief: '✅',
+    physical: '✅',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/KenkaBancho6Soul&Blood.png', alt: 'Kenka Banchô 6 : Soul and Blood +' },
+    name: 'Kenka Banchô 6 : Soul and Blood +',
+    publisher: 'Spike Chunsoft',
+    genre: { type: 'tag', value: 'btu' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: 'G9F2vPVkzgI' },
+    relief: '❌',
+    physical: '✅ Exclu JPN',
+    relevance: ''
+  },
+  {
+    image: { type: 'image', src: '/img/covers/MonsterHunter3Ultimate.jpeg', alt: 'Monster Hunter 3 Ultimate' },
+    name: 'Monster Hunter 3 Ultimate',
+    publisher: 'Capcom',
+    genre: { type: 'tag', value: 'actionrpg' },
+    rightstick: { type: 'tag', value: 'freecamera' },
+    video: { type: 'youtube', id: '3nq-R_yDEkU' },
     relief: '✅',
     physical: '✅',
     relevance: ''
